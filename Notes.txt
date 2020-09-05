@@ -1,9 +1,12 @@
 Strategy pattern:
     Defines a family of algorithms, encapsulates each one, and makes them, interchangeable.
     Strategy lets the algorithm vary independently from clients that use it.
+
+Observer pattern:
+    Defines a one-to-many dependency between objects so that when one object change state, all of its         dependents are notified and updated automatically.
     
 Disign principles:
     *Identify the aspects of your application that vary and separate them from what stays the same. Page 9
     *Program to an interface, not an implementation. Page 11
     *Favor composition over inheritance. Page 23
-	
+    *Strive for loosely couple designs between objects that interact. Page 53	
