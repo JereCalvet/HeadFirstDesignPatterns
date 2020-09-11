@@ -4,10 +4,10 @@ import beverages.Beverage;
 import beverages.Size;
 
 public class Whip extends CondimentDecorator {
-    protected Beverage beverage;
 
     public Whip(Beverage beverage) {
-        this.beverage = beverage;
+        super(beverage);
+        //this.beverage = beverage;
     }
 
     public String getDescription() {

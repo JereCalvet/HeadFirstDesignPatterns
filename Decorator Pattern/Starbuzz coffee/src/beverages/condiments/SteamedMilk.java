@@ -4,10 +4,9 @@ import beverages.Beverage;
 import beverages.Size;
 
 public class SteamedMilk extends CondimentDecorator {
-    protected Beverage beverage;
 
     public SteamedMilk(Beverage beverage) {
-        this.beverage = beverage;
+        super(beverage);
     }
 
     public String getDescription() {

@@ -5,10 +5,8 @@ import beverages.Size;
 
 public class Mocha extends CondimentDecorator {
 
-    protected Beverage beverage;
-
     public Mocha(Beverage beverage) {
-        this.beverage = beverage;
+        super(beverage);
     }
 
     public String getDescription() {

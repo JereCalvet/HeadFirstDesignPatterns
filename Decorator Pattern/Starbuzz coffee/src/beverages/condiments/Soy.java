@@ -5,10 +5,8 @@ import beverages.Size;
 
 public class Soy extends CondimentDecorator {
 
-    protected Beverage beverage;
-
     public Soy(Beverage beverage) {
-        this.beverage = beverage;
+        super(beverage);
     }
 
     public String getDescription() {
