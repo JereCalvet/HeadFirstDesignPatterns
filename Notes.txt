@@ -1,4 +1,7 @@
-Factory pattern:
+Abstract factory pattern:
+    Provides an interface for creating families of related or dependent objects without specifying thier concrete classes.
+
+Factory method pattern:
     Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
     
 Decorator pattern:
@@ -16,4 +19,5 @@ Disign principles:
     *Favor composition over inheritance. Page 23
     *Strive for loosely couple designs between objects that interact. Page 53
     *Classes should be open for extension but closed for modification. Page 86
-    *Depend upon abstractions. Do not depend upon contrete classes. Page 139	
+    *Dependancy invention principly: Depend upon abstractions. Do not depend upon contrete classes. Page 139	
+    
