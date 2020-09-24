@@ -1,3 +1,6 @@
+Singleton pattern:
+    Ensures a class has only one instance, and provides a global point of access to it.
+
 Abstract factory pattern:
     Provides an interface for creating families of related or dependent objects without specifying thier concrete classes.
 
