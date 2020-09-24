@@ -29,6 +29,6 @@ public class StarbuzzCoffee {
         beverage4 = new Soy(beverage4);
         beverage4 = new Cinnamon(beverage4); //applying example tax here.
         System.out.println(beverage4.getSize() + " " + beverage4.getDescription() + " $" + beverage4.cost() + "\n");
-        //added behavior (private method Cinnamontax
+        //added behavior (private method Cinnamontax)
     }
 }
