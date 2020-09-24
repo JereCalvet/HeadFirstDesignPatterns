@@ -1,6 +1,9 @@
+package doublecheckedlocking;
+
+
 public class ChocolateBoilerSingleton {
 
-    private static ChocolateBoilerSingleton uniqueInstance;
+    private volatile static ChocolateBoilerSingleton uniqueInstance;
     private boolean empty;
     private boolean boiled;
 
@@ -11,7 +14,11 @@ public class ChocolateBoilerSingleton {
 
     public static synchronized ChocolateBoilerSingleton getInstance() {
         if (uniqueInstance == null) {
-            uniqueInstance = new ChocolateBoilerSingleton();
+            synchronized (ChocolateBoilerSingleton.class) {
+                if (uniqueInstance == null) {
+                    uniqueInstance = new ChocolateBoilerSingleton();
+                }
+            }
         }
         return uniqueInstance;
     }

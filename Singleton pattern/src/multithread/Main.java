@@ -1,3 +1,5 @@
+package multithread;
+
 public class Main {
     public static void main(String[] args) {
         ChocolateBoilerSingleton boiler1 = ChocolateBoilerSingleton.getInstance();
@@ -17,6 +19,5 @@ public class Main {
         boiler3.drain();
         System.out.println("is boiler3 empty? " + boiler3.isEmpty());
         System.out.println("is boiler3 boiled? " + boiler3.isBoiled());
-
     }
 }
