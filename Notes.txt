@@ -1,3 +1,6 @@
+Facade pattern: 
+    Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+
 Adapter pattern:
     Converts the interface of a class into another interface the clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 
@@ -28,5 +31,6 @@ Disign principles:
     *Favor composition over inheritance. Page 23
     *Strive for loosely couple designs between objects that interact. Page 53
     *Classes should be open for extension but closed for modification. Page 86
-    *Dependancy invention principly: Depend upon abstractions. Do not depend upon contrete classes. Page 139	
+    *Dependancy invention principle: Depend upon abstractions. Do not depend upon contrete classes. Page 139
+    *Principle of leaest knowledge: talk only to your immediate friends. Page 265	
     
