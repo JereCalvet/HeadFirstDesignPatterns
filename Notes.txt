@@ -1,3 +1,6 @@
+Template method pattern:
+    Defines the skeleton of an algorithm in a method, deffering some steps to subclasses. Template method lets subclasses redifine certain steps of an algorithm without changing the algorithm's structure.
+
 Facade pattern: 
     Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
 
@@ -32,5 +35,6 @@ Disign principles:
     *Strive for loosely couple designs between objects that interact. Page 53
     *Classes should be open for extension but closed for modification. Page 86
     *Dependancy invention principle: Depend upon abstractions. Do not depend upon contrete classes. Page 139
-    *Principle of leaest knowledge: talk only to your immediate friends. Page 265	
+    *Principle of leaest knowledge: talk only to your immediate friends. Page 265
+    *Hollywood principle: dont call us, we'll call you. Page 296	
     
