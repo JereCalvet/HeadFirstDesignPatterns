@@ -1,3 +1,6 @@
+Iterator pattern:
+    Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+
 Template method pattern:
     Defines the skeleton of an algorithm in a method, deffering some steps to subclasses. Template method lets subclasses redifine certain steps of an algorithm without changing the algorithm's structure.
 
@@ -37,4 +40,4 @@ Disign principles:
     *Dependancy invention principle: Depend upon abstractions. Do not depend upon contrete classes. Page 139
     *Principle of leaest knowledge: talk only to your immediate friends. Page 265
     *Hollywood principle: dont call us, we'll call you. Page 296	
-    
+    *Single responsibility principle: a class should have only one reason to change. Page 339     
