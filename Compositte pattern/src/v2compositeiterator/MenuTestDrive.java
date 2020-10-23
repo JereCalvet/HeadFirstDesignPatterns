@@ -8,12 +8,41 @@ import v2compositeiterator.menusdomain.Waitress;
 public class MenuTestDrive {
 
     public static void main(String[] args) {
-        Waitress waitress = new Waitress(createMenus());
-        waitress.printMenu();
-        //waitress.printVegetarianMenu();
+        //Waitress waitress = new Waitress(createAllMenus());
+        //Waitress waitress = new Waitress(createSingleMenu());
+        Waitress waitress = new Waitress(createOneLeafOneNodeMenu());
+
+        //waitress.printMenu();
+        waitress.printVegetarianMenu();
     }
 
-    public static MenuComponent createMenus() {
+    public static MenuComponent createOneLeafOneNodeMenu() {
+        MenuComponent pizzaMenu = new Menu("PIZZA MENU", "Launch");
+        pizzaMenu.add(new MenuItem("PIZZA ROQUEFORT", "Pizza cheese roquefort", true, 15.0));
+
+        MenuComponent mozzarellasMenu = new Menu("PIZZA MOZZARELLA MENUS", "anytime");
+        mozzarellasMenu.add(new MenuItem("PIZZA MOZZA ONLY", "Sauce and cheese", true, 8.0));
+        mozzarellasMenu.add(new MenuItem("PIZZA FUGAZZA", "Onion and cheese", true, 10.0));
+        mozzarellasMenu.add(new MenuItem("PIZZA SPECIAL FUGAZZA", "Onion, eggs and cheese", false, 11.0));
+        mozzarellasMenu.add(new MenuItem("PIZZA FUGAZZA MONSTER", "A LOT of onions, tuna and cheese", false, 18.0));
+
+        pizzaMenu.add(mozzarellasMenu);
+
+        return pizzaMenu;
+    }
+
+    public static MenuComponent createLeafOnlyMenus() {
+        MenuComponent empanadasMenu = new Menu("EMPANADAS MENU", "Dinner");
+
+        empanadasMenu.add(new MenuItem("EMPANADAS DE CARNE", "Carne salada", false, 20.0));
+        empanadasMenu.add(new MenuItem("EMPANADAS DE VEGANAS", "Mix verduras", true, 18.0));
+        empanadasMenu.add(new MenuItem("EMPANADAS DE HUMITA", "Choclo", true, 15.0));
+        empanadasMenu.add(new MenuItem("EMPANADAS DE JAMON Y QUESO", "Jamon y queso muzzarella", false, 16.0));
+
+        return empanadasMenu;
+    }
+
+    public static MenuComponent createLeafAndNodesMenus() {
         MenuComponent pancakeHouseMenu =
                 new Menu("PANCAKE HOUSE MENU", "Breakfast");
         MenuComponent dinerMenu =
