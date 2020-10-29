@@ -3,6 +3,6 @@ package gumballdomain;
 public interface State {
     void insertCoin();
     void ejectCoin();
-    void turnCrank();
+    boolean turnCrank();
     void dispense();
 }

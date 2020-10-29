@@ -18,8 +18,9 @@ public class SoldState implements State {
     }
 
     @Override
-    public void turnCrank() {
+    public boolean turnCrank() {
         System.out.println("Turning the crank twice doesn't get you another gumball");
+        return false;
     }
 
     @Override

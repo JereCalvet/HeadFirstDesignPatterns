@@ -19,8 +19,9 @@ public class NoCoinState implements State {
     }
 
     @Override
-    public void turnCrank() {
+    public boolean turnCrank() {
         System.out.println("You turned but there's no coin");
+        return false;
     }
 
     @Override

@@ -23,7 +23,7 @@ public class HasCoinState implements State {
     }
 
     @Override
-    public void turnCrank() {
+    public boolean turnCrank() {
         System.out.println("You turned...");
         int winner = randomWinner.nextInt(10);
         if ((winner == 0) && (gumballMachine.getGumballCounter() > 1)) {
@@ -31,6 +31,7 @@ public class HasCoinState implements State {
         } else {
             gumballMachine.setState(gumballMachine.getSoldState());
         }
+        return true;
     }
 
     @Override

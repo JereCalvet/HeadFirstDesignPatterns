@@ -36,8 +36,7 @@ public class GumballMachine {
     }
 
     public void turnCrank() {
-        state.turnCrank();
-        if (state == soldState || state == winnerState) {
+        if (state.turnCrank()) {
             state.dispense();
         }
     }
